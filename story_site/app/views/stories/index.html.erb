@@ -1,6 +1,6 @@
 <h1>The Stories Index</h1>
 
-<%= link_to "Start new story", new_story_path %>
+<%= link_to "Start new story", new_story_path, class: "nav-link"  %>
 
 <hr>
 
@@ -8,7 +8,7 @@
 <% if @stories.any? %>
   <ul>
   <% @stories.each do |story| %>
-    <li><%= link_to story.title, story_path(story)%></li>
+    <li><%= link_to story.title, story_path(story), class: "nav-link" %></li>
   <% end %>
   </ul>
 <% end %>
