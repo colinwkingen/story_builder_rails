@@ -5,10 +5,14 @@
 
 <% if @story.sentences.any? %>
   <ul>
-  <% @story.sentences.each do |sentence| %>
-    <li><%= image_tag (sentence.image_id.to_s + ".png") %></li>
-    <li><%= sentence.content %></li>
-  <% end %>
+    <% @story.sentences.each do |sentence| %>
+      <% if sentence == @story.sentences.last %>
+        <!-- Don't display. The sentence form requires an empty sentence object to function -->
+      <% else %>
+        <li><%= image_tag (sentence.image_id.to_s + ".png") %></li>
+        <li><%= sentence.content %></li>
+      <% end %>
+    <% end %>
   </ul>
 <% else %>
   <h3>This story has no content. Please add the first sentence.</h3>
