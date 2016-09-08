@@ -18,7 +18,13 @@ class StoriesController < ApplicationController
 
   def show
     @story = Story.find(params[:id])
-    @sentence = @story.sentences.new
+    @sentence = Sentence.new
+  end
+
+  def destroy
+    @story = Story.find(params[:id])
+    @story.destroy
+    redirect_to stories_path
   end
 
   private
