@@ -1,0 +1,14 @@
+<h1>The Stories Index</h1>
+
+<%= link_to "Start new story", new_story_path %>
+
+<hr>
+
+<h3>Add to stories in progress</h3>
+<% if @stories.any? %>
+  <ul>
+  <% @stories.each do |story| %>
+    <li><%= link_to story.title, story_path(story)%></li>
+  <% end %>
+  </ul>
+<% end %>

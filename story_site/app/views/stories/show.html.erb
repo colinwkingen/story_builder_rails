@@ -1,0 +1,15 @@
+<h1><%= @story.title %></h1>
+
+<!-- <%= link_to "Add a sentence", new_story_sentence_path(@story) %> -->
+<%= render 'sentences/form' %>
+
+<% if @story.sentences.any? %>
+  <ul>
+  <% @story.sentences.each do |sentence| %>
+    <li><%= image_tag (sentence.image_id.to_s + ".png") %></li>
+    <li><%= sentence.content %></li>
+  <% end %>
+  </ul>
+<% else %>
+  <h3>This story has no content. Please add the first sentence.</h3>
+<% end %>
