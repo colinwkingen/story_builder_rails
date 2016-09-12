@@ -1,24 +1,48 @@
-# README
+## Story Builder
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### By Colin Kingen, 2016
 
-Things you may want to cover:
+This app is viewable at: https://github.com/colinwkingen/story_builder_rails
 
-* Ruby version
+## Description
 
-* System dependencies
+This app lets you create a story, generate a random image and add sentences to the story
+based on that image.
 
-* Configuration
+## Setup/Installation Requirements
 
-* Database creation
+* Clone the repo from github
+* Make sure Postgres is installed and running
+* Run bundle install
+* Make sure you have the node.js environment, rails 5 and activerecord installed.
+* Run rails db:migrate
+* Run the rails server
+* Navigate to localhost:3000
 
-* Database initialization
+## Known Bugs
 
-* How to run the test suite
+No known bugs.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Support and contact details
 
-* Deployment instructions
+Contact me on github if you have any questions.
 
-* ...
+## Technologies Used
+
+* Ruby on Rails
+* HTML
+* Bootstrap
+* node.js
+
+
+### License
+
+Licensed under the MIT License
+
+Copyright (c) 2016 **Colin W Kingen**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
